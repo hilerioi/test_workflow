@@ -6,19 +6,13 @@ Make sure you install the node.js server software.  Ensure your path variable co
 
 To execute the server run the following commands:
 
-1. install prerequisites: npm install
+1a. install prerequisites: npm install
+1b. fix audits: npm audit fix
 
-2. compile AppServer.ts: tsc AppServer.ts
+2a. To compile AppServer.ts: tsc AppServer.ts
+2b. To compile App.ts: tsc App.ts
 
 3. execute AppServer: node AppServer.js
 
-To test static server routes, try the following URL on the browser while the server is running:
-* http://localhost:8080/
-* http://localhost:8080/index.html
-* http://localhost:8080/images/image1.png
-
-To test dynaic server routes, try the following URL on the browser while the server is running:
-* http://localhost:8080/one
-* http://localhost:8080/add?var1=1&var2=2
-* http://localhost:8080/name/israelh
-* http://localhost:8080/name/hello
+To start the forms server, the workflow server, and then use this command:
+* http://localhost:8080/workflow/1/start
